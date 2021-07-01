@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>CookieMonster</title>
+
+    <script type="module" src="/build/cookiemonster.esm.js"></script>
+    <script nomodule src="/build/cookiemonster.js"></script>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <cookie-monster></cookie-monster>
+
+    <script>
+      const el = document.querySelector('cookie-monster')
+      el.addEventListener('consentResult', e => {
+        console.log(`consentResult event`, e.detail)
+      })
+    </script>
+  </body>
+</html>
