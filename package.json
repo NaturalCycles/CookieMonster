@@ -29,5 +29,21 @@
     "jest": "^27.0.6"
   },
   "description": "CookieMonster",
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NaturalCycles/cookiemonster"
+  },
+  "keywords": [
+    "cookie",
+    "monster",
+    "banner"
+  ],
+  "author": "Natural Cycles Team",
   "license": "MIT"
 }
