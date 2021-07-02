@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/NaturalCycles/cookiemonster/compare/v1.0.1...v1.0.2) (2021-07-02)
+
+
+### Bug Fixes
+
+* npm access=publie ([0d1af00](https://github.com/NaturalCycles/cookiemonster/commit/0d1af00e2fc77e8315de119bd41141e5f4d57ae7))
+
 ## [1.0.1](https://github.com/NaturalCycles/CookieMonster/compare/v1.0.0...v1.0.1) (2021-07-02)
 
 
