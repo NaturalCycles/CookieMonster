@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/NaturalCycles/CookieMonster/compare/v1.0.0...v1.0.1) (2021-07-02)
+
+
+### Bug Fixes
+
+* improve style, demo page ([5724d20](https://github.com/NaturalCycles/CookieMonster/commit/5724d20b69643b32f05828a60ead7b8d743cbb2b))
+
 # 1.0.0 (2021-07-01)
 
 
