@@ -6,23 +6,42 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
     />
-    <title>CookieMonster</title>
+    <title>CookieMonster demo</title>
 
     <script type="module" src="/build/cookiemonster.esm.js"></script>
     <script nomodule src="/build/cookiemonster.js"></script>
     <style>
       body {
         margin: 0;
+        font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+      }
+
+      button {
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
+    <div style="padding: 20px 40px;">
+      <h1>CookieMonster demo site</h1>
+      <p>Some content here</p>
+      <p>Some more content</p>
+      <p>Some even more content</p>
+      <p>Consent given: <code class="consent">undefined</code></p>
+      <button class="button-reset">Reset cookie consent</button>
+    </div>
+
     <cookie-monster></cookie-monster>
 
     <script>
-      const el = document.querySelector('cookie-monster')
-      el.addEventListener('consentResult', e => {
+      document.querySelector('cookie-monster').addEventListener('consentResult', e => {
         console.log(`consentResult event`, e.detail)
+        document.querySelector('.consent').textContent = e.detail
+      })
+
+      document.querySelector('.button-reset').addEventListener('click', () => {
+        localStorage.removeItem('cookieMonster')
+        location.reload()
       })
     </script>
   </body>

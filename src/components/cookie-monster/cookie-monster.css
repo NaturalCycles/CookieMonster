@@ -1,13 +1,17 @@
 :host {
+  position: fixed;
+  top: 0; left: 0;
   display: block;
+  width: 100vw;
   font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
 }
 
 .container {
   display: flex;
   background-color: #aaa;
-  padding: 40px 20px;
+  padding: 50px 20px;
   gap: 0 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .container__text {
